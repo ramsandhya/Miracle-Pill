@@ -124,6 +124,9 @@
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igj-vG-V4m">
                                 <state key="normal" backgroundImage="buyNowBtn"/>
+                                <connections>
+                                    <action selector="buyNow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ecy-0I-mBW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -174,8 +177,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buyNowButton" destination="igj-vG-V4m" id="PMU-hh-T5P"/>
+                        <outlet property="cityName" destination="VvP-NA-Bcj" id="6Eh-CY-xDX"/>
+                        <outlet property="cityNameText" destination="4gr-7J-PIR" id="bx6-GJ-RJB"/>
+                        <outlet property="fullName" destination="Tsp-OX-Cy2" id="Hlp-iM-gqQ"/>
+                        <outlet property="fullNameText" destination="JzG-wm-0Vi" id="S5B-EK-GQm"/>
+                        <outlet property="stateName" destination="JJy-vd-TaD" id="z2J-ER-H8c"/>
                         <outlet property="statePicker" destination="lOJ-8Q-Boa" id="4yC-ec-R4j"/>
                         <outlet property="statePickerBtn" destination="Io8-DD-egn" id="Zuf-04-HOF"/>
+                        <outlet property="streetName" destination="6W3-Fi-4o7" id="Qeo-9P-9PY"/>
+                        <outlet property="streetNameText" destination="7fn-kS-gfv" id="tUg-mX-He1"/>
+                        <outlet property="zipCode" destination="V2C-Mj-dvP" id="vO3-hn-LIX"/>
+                        <outlet property="zipCodeText" destination="HzE-bv-wng" id="Cmh-dF-kYc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -14,6 +14,26 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     @IBOutlet weak var statePickerBtn: UIButton!
     
+    @IBOutlet weak var fullName: UILabel!
+    
+    @IBOutlet weak var fullNameText: UITextField!
+    
+    @IBOutlet weak var streetName: UILabel!
+    
+    @IBOutlet weak var streetNameText: UITextField!
+    
+    @IBOutlet weak var cityName: UILabel!
+    
+    @IBOutlet weak var cityNameText: UITextField!
+    
+    @IBOutlet weak var zipCode: UILabel!
+    
+    @IBOutlet weak var zipCodeText: UITextField!
+    
+    @IBOutlet weak var stateName: UILabel!
+    
+    @IBOutlet weak var buyNowButton: UIButton!
+    
     let states = ["Alaska", "Arkansas", "Alabama", "California", "Maine", "New York", "Georgia", "Florida", "Virginia"]
     
     override func viewDidLoad() {
@@ -45,6 +65,24 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         statePickerBtn.setTitle(states[row], for: UIControlState.normal)
         statePicker.isHidden = true
+    }
+    @IBAction func buyNow(_ sender: AnyObject) {
+        statePicker.isHidden = true
+        fullName.isHidden = true
+        fullNameText.isHidden = true
+        streetName.isHidden = true
+        streetNameText.isHidden = true
+        cityName.isHidden = true
+        cityNameText.isHidden = true
+        zipCode.isHidden = true
+        zipCodeText.isHidden = true
+        stateName.isHidden = true
+        statePickerBtn.isHidden = true
+        buyNowButton.isHidden = true
+        
+//        let successImage = UIImageView()
+//        successImage.image = #imageLiteral(resourceName: "successIndicator")
+//        successImage.isHidden = false
     }
 }
 
